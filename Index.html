@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Retrac</title>
+
+<style>
+body{
+    margin:0;
+    font-family:system-ui;
+    background:#07070a;
+    color:white;
+    overflow:hidden;
+}
+
+/* background glow */
+.bg{
+    position:fixed;
+    inset:0;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(255,45,45,0.18), transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(255,45,45,0.10), transparent 40%);
+    z-index:-1;
+}
+
+/* layout */
+.hero{
+    text-align:center;
+    padding:120px 20px;
+}
+
+/* title */
+h1{
+    font-size:3.2rem;
+    margin-bottom:10px;
+}
+
+/* rotating text */
+h2{
+    color:#ff2d2d;
+    transition:0.3s;
+}
+
+/* button */
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 20px;
+    border-radius:12px;
+    background:linear-gradient(135deg,#ff2d2d,#ff5a5a);
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.2s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="hero">
+
+    <h1>Retrac</h1>
+
+    <h2 id="rotatingText">Clean UI. Fast Performance.</h2>
+
+    <p style="color:#aaa;">
+        Modern software interface built for speed.
+    </p>
+
+    <a class="btn" href="pricing.html">Get Started</a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
